@@ -17,6 +17,6 @@ for (( i = 1; i <= $L; i++ ))
 #for i in {1.."$L"}
 do
 	trash=`tr -dc A-Za-z0-9 </dev/urandom | head -c 20`
-	./maalik_mail_2.sh "$trash" "$i" "$C" "$R"
+	./maalik_mail_2.sh "$trash" "$i" "$C" "$R" "$E"
 	sleep 2
 done
