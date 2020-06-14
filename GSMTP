@@ -18,7 +18,7 @@ ____________________________________________________________________
 # to generate AUTH login -
 ┌─[michael@VSauce]─[~]
 └──╼ $echo -ne '\00user@gmail.com\00passwd' | base64
-AHJpdGlrbWFhbGlrMjAwMEBnbWFpbC5jb20AJDEwTWlsbGlvbg==
+<your auth login in base64>
 
 
 
