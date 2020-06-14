@@ -1,24 +1,23 @@
 # Send mail using GSMTP
-# Hail stackoverflow <3
+# Steps
 ____________________________________________________________________
 
 openssl s_client -connect smtp.gmail.com:465 -crlf -ign_eof
 EHLO localhost
-AUTH PLAIN AHJpdGlrbWFhbGlrMjAwMEBnbWFpbC5jb20AJDEwTWlsbGlvbg==
-MAIL FROM: <ritikmaalik2000@gmail.com>
-rcpt to: <hardeepmalik333@gmail.com>
+AUTH PLAIN <your credentials in base64>
+MAIL FROM: <user@gmail.com>
+rcpt to: <receiver@gmail.com>
 DATA
-Subject: gadha kahin ka
-
-nahi tu le na!
-beta baccha hai tu abhi O_o
+Subject: blah blah
+blah blah O_o
+blah blah blah....
 .
 quit
 ____________________________________________________________________
 
 # to generate AUTH login -
 ┌─[michael@VSauce]─[~]
-└──╼ $echo -ne '\00ritikmaalik2000@gmail.com\00$10Million' | base64
+└──╼ $echo -ne '\00user@gmail.com\00passwd' | base64
 AHJpdGlrbWFhbGlrMjAwMEBnbWFpbC5jb20AJDEwTWlsbGlvbg==
 
 
